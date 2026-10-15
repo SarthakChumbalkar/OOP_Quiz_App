@@ -1,0 +1,21 @@
+# OOP Quiz Studio question bank
+# Format: TYPE|Question|Option1|Option2|Option3|Option4|CorrectIndex(0-based)|Explanation
+# For TF, leave option3 and option4 empty: TF|Question|True|False|||CorrectIndex|Explanation
+MCQ|Which OOP concept bundles data and functions into one unit?|Inheritance|Encapsulation|Polymorphism|Recursion|1|Encapsulation combines data and methods inside a class and helps control access to the data.
+MCQ|Which feature allows a derived class to reuse the accessible members of a base class?|Inheritance|Function overloading|Exception handling|File handling|0|Inheritance lets a derived class reuse and extend the accessible members and behaviour of a base class.
+MCQ|Which OOP concept means one interface can have multiple forms?|Abstraction|Encapsulation|Polymorphism|Compilation|2|Polymorphism lets the same interface behave differently depending on the object or implementation.
+MCQ|Which access specifier is used to hide class details from ordinary outside access?|public|private|global|virtual|1|Private members cannot be accessed directly from ordinary code outside the class.
+MCQ|Which keyword enables runtime dispatch for a member function?|static|friend|virtual|explicit|2|A virtual function can call the derived implementation through a base pointer or reference.
+MCQ|Which declaration makes a virtual function pure virtual?|virtual void run();|virtual void run() = 0;|void virtual = run();|pure virtual void run();|1|The = 0 syntax declares a pure virtual function and makes the class abstract if one remains pure.
+MCQ|What is the main use of a virtual destructor in a base class?|It overloads constructors|It supports correct deletion through a base pointer|It makes every method pure virtual|It prevents inheritance|1|Deleting a derived object through a base pointer should run the derived destructor; a virtual base destructor enables this.
+MCQ|Which keyword can prevent an implicit conversion through a constructor?|mutable|explicit|override|typedef|1|The explicit keyword blocks certain implicit conversions through constructors or conversion functions.
+MCQ|Which function feature allows the same function name with different parameter lists?|Function overloading|Function overriding only|File buffering|Exception throwing|0|Function overloading uses the same name with different parameter lists, and the compiler selects a match.
+MCQ|Which C++ construct is used to handle an exception?|if / else|try / catch|for / while|class / public|1|Code that may throw is placed in a try block, and a matching catch block handles the exception.
+MCQ|Which stream class is commonly used to read text from a file?|std::ofstream|std::ifstream|std::ostream|std::thread|1|std::ifstream is an input file stream used to read from files.
+MCQ|Which STL container is suitable for a resizable sequence of questions?|std::vector|std::exception|std::ifstream|std::function only|0|std::vector stores a resizable sequence and is useful for a dynamic question bank.
+MCQ|Which standard algorithm can randomly reorder elements in a container?|std::getline|std::shuffle|std::stoi|std::move only|1|std::shuffle randomizes the order of elements in a range using a random-number generator.
+MCQ|What is a key benefit of a class template?|It generates classes for different data types|It disables compile-time checking|It replaces every STL container|It runs only at runtime|0|A class template lets one class design work with different types, avoiding duplicated implementations.
+TF|A class with at least one pure virtual function is abstract.|True|False|||0|A class with a pure virtual function is abstract and cannot be instantiated directly.
+TF|A derived-class override can be selected through a base-class pointer when the base function is virtual.|True|False|||0|Virtual dispatch selects the overriding implementation according to the dynamic object type.
+TF|std::ofstream is primarily used to read a text file.|True|False|||1|std::ofstream is used for output to files; std::ifstream is commonly used for input.
+TF|A catch block can handle a matching exception thrown from a try block.|True|False|||0|The runtime looks for a compatible catch handler when an exception leaves the try block.
