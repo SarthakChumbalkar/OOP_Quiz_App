@@ -1,4 +1,4 @@
-# OOP Quiz Studio — C++ Mini Project
+# OOP Quiz Studio - C++ Mini Project
 
 A small native Windows GUI quiz app for an Object-Oriented Programming (OOP) course. It uses only standard C++17 and the Windows API; no third-party GUI framework is required.
 
